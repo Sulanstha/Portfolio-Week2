@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulan Shrestha - Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section with Video Background -->
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <nav class="navbar">
+            <span class="logo">Sulan Shrestha</span>
+            <button class="menu-toggle" id="menu-button" aria-expanded="false" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>Sulan Shrestha</h1>
+            <p>Frontend Developer & UI/UX Enthusiast</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Sulan Shrestha from Budhanilkantha, Kathmandu. 
+            I completed my school education at Himalaya Boarding School and +2 at Southwestern State College. 
+            I am currently pursuing my bachelor's degree at Herald College Kathmandu.
+        </p>
+    </section>
+
+    <!-- Skills Section (Missing in your original) -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">Flexbox & Grid</div>
+            <div class="skill-item">Git</div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Grid -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+            <div class="project-card">
+                <img src="images/images.jpg" alt="Boudha Temple Project">
+                <h3>Boudha Temple</h3>
+                <p>
+                    Boudha, or Boudhanath, is an important spiritual hub in Kathmandu, Nepal...
+                </p>
+            </div>
+            <div class="project-card">
+                <img src="images/sulan.jpg" alt="Pashupatinath Temple Project">
+                <h3>Pashupatinath Temple</h3>
+                <p>
+                    The Pashupatinath Temple is a sacred Hindu temple complex...
+                </p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            
+            <button type="submit" id="submitBtn">Submit</button>
+            
+            <div id="form-message"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright © Sulan Shrestha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
